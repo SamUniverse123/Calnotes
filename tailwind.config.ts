@@ -60,7 +60,19 @@ const config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        //neoBrut
         base: '10px'
+      },
+      boxShadow: {
+        base: '5px 5px 0px 0px rgba(0,0,0,1)',
+      },
+      translate: {
+        boxShadowX: '5px',
+        boxShadowY: '5px',
+      },
+      fontWeight: {
+        base: '500',
+        heading: '700',
       },
       keyframes: {
         "accordion-down": {
