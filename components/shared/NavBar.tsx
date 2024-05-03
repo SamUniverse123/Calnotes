@@ -13,6 +13,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/UI/navigation-menu"
+import { twMerge } from "tailwind-merge"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -57,7 +58,7 @@ export default function NavBar() {
     <NavigationMenu>
       <NavigationMenuList >
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Bundles</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-base">Bundles</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -91,8 +92,8 @@ export default function NavBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Subjets</NavigationMenuTrigger>
-          <NavigationMenuContent>
+          <NavigationMenuTrigger className="text-base">Subjets</NavigationMenuTrigger>
+          <NavigationMenuContent >
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
                 <ListItem
@@ -108,8 +109,9 @@ export default function NavBar() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              about
+            <NavigationMenuLink className={navigationMenuTriggerStyle()} >
+              
+              <div className='text-base'>About</div>
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

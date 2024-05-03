@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import TopHeader from "@/components/shared/topHeader";
+import clsx from "clsx";
+import Footer from "@/components/shared/Footer";
 
 
 
 
 
-const inter = Inter({ subsets: ["latin"] });
+
+const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Calnotes",
@@ -21,11 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={clsx(inter.className)} >
+        
         
         <TopHeader/>
         {children}
+        <Footer/>
         </body>
+        
     </html>
   );
 }

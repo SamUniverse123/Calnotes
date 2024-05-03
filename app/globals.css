@@ -64,13 +64,24 @@
       --input: 217.2 32.6% 17.5%;
       --ring: 212.7 26.8% 83.9%;
     }
+
+   
   }
+
 
   @layer base {
     * {
       @apply border-border;
     }
     body {
-      @apply bg-background text-foreground;
+      @apply bg-bg text-foreground flex-col;
     }
+  }
+
+  @layer components{
+
+    .hero{
+      @apply w-full min-h-[36rem]  my-10 px-4 sm:px-6 lg:px-8 bg-white border-black border-2 rounded-base flex
+    }
+    
   }

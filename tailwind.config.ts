@@ -52,7 +52,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        bg: '#fff4e0',
+        bg: '#f3f7fe',
       main: '#FD9745',
       mainAccent: '#fc7303', // not needed for shadcn
       },
@@ -61,18 +61,21 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
         //neoBrut
-        base: '10px'
+        base: '5px'
       },
       boxShadow: {
-        base: '5px 5px 0px 0px rgba(0,0,0,1)',
+        base: '4px 4px 0px 0px rgba(0,0,0,1)',
       },
       translate: {
-        boxShadowX: '5px',
-        boxShadowY: '5px',
+        boxShadowX: '4px',
+      boxShadowY: '4px',
       },
       fontWeight: {
         base: '500',
         heading: '700',
+      },
+      aspectRatio: {
+        'card': '2/ 3',
       },
       keyframes: {
         "accordion-down": {
