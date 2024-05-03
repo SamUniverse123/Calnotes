@@ -55,7 +55,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function NavBar() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className='hidden sm:flex'>
       <NavigationMenuList >
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-base">Bundles</NavigationMenuTrigger>

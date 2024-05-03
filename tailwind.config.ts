@@ -52,10 +52,19 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        
         bg: '#f3f7fe',
       main: '#FD9745',
       mainAccent: '#fc7303', // not needed for shadcn
-      },
+
+      //subject colors
+      'BrutY' : '#FFFF00',
+      'BrutR' : 'FF4911',
+      'BrutLB' : '7DF9FF',
+      'BrutDB' : '3300FF',
+      'BrutG' : '2FFF2F',
+      'BrutP' :'9723c9'  
+       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -65,6 +74,7 @@ const config = {
       },
       boxShadow: {
         base: '4px 4px 0px 0px rgba(0,0,0,1)',
+        subject: '5px 5px 0px 0px rgba(0,0,0,1)',
       },
       translate: {
         boxShadowX: '4px',
@@ -77,6 +87,7 @@ const config = {
       aspectRatio: {
         'card': '2/ 3',
       },
+      
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -93,7 +104,9 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+  require('@tailwindcss/aspect-ratio'),
+  ],
 } satisfies Config
 
 export default config
