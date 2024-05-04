@@ -59,11 +59,11 @@ const config = {
 
       //subject colors
       'BrutY' : '#FFFF00',
-      'BrutR' : 'FF4911',
-      'BrutLB' : '7DF9FF',
-      'BrutDB' : '3300FF',
-      'BrutG' : '2FFF2F',
-      'BrutP' :'9723c9'  
+      'BrutR' : '#FF4911',
+      'BrutLB' : '#3300FF',
+      'BrutDB' : '#7DF9FF',
+      'BrutG' : '#2FFF2F',
+      'BrutP' :'#9723c9'  
        },
       borderRadius: {
         lg: "var(--radius)",

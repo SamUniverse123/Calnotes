@@ -5,11 +5,6 @@ import TopHeader from "@/components/shared/topHeader";
 import clsx from "clsx";
 import Footer from "@/components/shared/Footer";
 
-
-
-
-
-
 const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,14 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(inter.className)} >
-        
-        
-        <TopHeader/>
+      <body className={clsx(inter.className)}>
+        <TopHeader />
         {children}
-        <Footer/>
-        </body>
-        
+        <Footer />
+      </body>
     </html>
   );
 }

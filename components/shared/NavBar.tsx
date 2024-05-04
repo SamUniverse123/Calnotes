@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
+import * as React from "react";
+import Link from "next/link";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,8 +12,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/UI/navigation-menu"
-import { twMerge } from "tailwind-merge"
+} from "@/components/UI/navigation-menu";
+import { twMerge } from "tailwind-merge";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -51,14 +51,16 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
-]
+];
 
 export default function NavBar() {
   return (
-    <NavigationMenu className='hidden sm:flex'>
-      <NavigationMenuList >
+    <NavigationMenu className="hidden sm:flex">
+      <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-base">Bundles</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-base">
+            Bundles
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -67,7 +69,6 @@ export default function NavBar() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-base bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-        
                     <div className="mb-2 mt-4 text-lg font-medium">
                       shadcn/ui
                     </div>
@@ -92,8 +93,10 @@ export default function NavBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-base">Subjets</NavigationMenuTrigger>
-          <NavigationMenuContent >
+          <NavigationMenuTrigger className="text-base">
+            Subjets
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
                 <ListItem
@@ -109,15 +112,14 @@ export default function NavBar() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()} >
-              
-              <div className='text-base'>About</div>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <div className="text-base">About</div>
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-  )
+  );
 }
 
 const ListItem = React.forwardRef<
@@ -131,7 +133,7 @@ const ListItem = React.forwardRef<
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-base p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
+            className,
           )}
           {...props}
         >
@@ -142,6 +144,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";

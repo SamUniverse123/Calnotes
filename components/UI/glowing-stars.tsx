@@ -1,9 +1,9 @@
 "use client";
- 
+
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
- 
+
 export const GlowingStarsBackgroundCard = ({
   className,
   children,
@@ -12,7 +12,7 @@ export const GlowingStarsBackgroundCard = ({
   children?: React.ReactNode;
 }) => {
   const [mouseEnter, setMouseEnter] = useState(false);
- 
+
   return (
     <div
       onMouseEnter={() => {
@@ -23,7 +23,7 @@ export const GlowingStarsBackgroundCard = ({
       }}
       className={cn(
         "bg-[linear-gradient(110deg,#333_0.6%,#222)] p-4 max-w-md max-h-[20rem] h-full w-full rounded-xl border border-[#eaeaea] dark:border-neutral-600",
-        className
+        className,
       )}
     >
       <div className="flex justify-center items-center">
@@ -33,7 +33,7 @@ export const GlowingStarsBackgroundCard = ({
     </div>
   );
 };
- 
+
 export const GlowingStarsDescription = ({
   className,
   children,
@@ -47,7 +47,7 @@ export const GlowingStarsDescription = ({
     </p>
   );
 };
- 
+
 export const GlowingStarsTitle = ({
   className,
   children,
@@ -61,26 +61,26 @@ export const GlowingStarsTitle = ({
     </h2>
   );
 };
- 
+
 export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
   const stars = 108;
   const columns = 18;
- 
+
   const [glowingStars, setGlowingStars] = useState<number[]>([]);
- 
+
   const highlightedStars = useRef<number[]>([]);
- 
+
   useEffect(() => {
     const interval = setInterval(() => {
       highlightedStars.current = Array.from({ length: 5 }, () =>
-        Math.floor(Math.random() * stars)
+        Math.floor(Math.random() * stars),
       );
       setGlowingStars([...highlightedStars.current]);
     }, 3000);
- 
+
     return () => clearInterval(interval);
   }, []);
- 
+
   return (
     <div
       className="h-48 p-1 w-full"
@@ -113,7 +113,7 @@ export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
     </div>
   );
 };
- 
+
 const Star = ({ isGlowing, delay }: { isGlowing: boolean; delay: number }) => {
   return (
     <motion.div
@@ -134,7 +134,7 @@ const Star = ({ isGlowing, delay }: { isGlowing: boolean; delay: number }) => {
     ></motion.div>
   );
 };
- 
+
 const Glow = ({ delay }: { delay: number }) => {
   return (
     <motion.div
