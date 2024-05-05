@@ -60,8 +60,8 @@ const config = {
       //subject colors
       'BrutY' : '#FFFF00',
       'BrutR' : '#FF4911',
-      'BrutLB' : '#3300FF',
-      'BrutDB' : '#7DF9FF',
+      'BrutDB' : '#3300FF',
+      'BrutLB' : '#7DF9FF',
       'BrutG' : '#2FFF2F',
       'BrutP' :'#9723c9'  
        },
@@ -97,10 +97,12 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        
       },
     },
   },

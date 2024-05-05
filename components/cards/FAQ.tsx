@@ -9,25 +9,25 @@ import React from "react";
 
 function FAQ() {
   return (
-    <div className="w-full h-fit lg:max-w-[60rem] mx-auto my-8">
-      <Accordion className="w-full lg:w-[unset]" type="single" collapsible>
-        <AccordionItem className=" max-w-full" value="item-1">
+    <div className="flex flex-col justify-center items-center w-full my-16 px-4">
+      <Accordion className="w-full lg:w-[60rem] " type="single" collapsible>
+        <AccordionItem className=" max-w-full lg:w-[60rem] " value="item-1">
+          <AccordionTrigger >Do the notes cover both AS and A level curriculums?</AccordionTrigger>
+          <AccordionContent >
+            Yes,our notes 
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+      <Accordion className="w-full lg:w-[60rem] " type="single" collapsible>
+        <AccordionItem className=" max-w-full lg:w-[60rem]" value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
           <AccordionContent>
             Yes. It adheres to the WAI-ARIA design pattern.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-      <Accordion className="w-full lg:w-[unset]" type="single" collapsible>
-        <AccordionItem className=" max-w-full" value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-      <Accordion className="w-full lg:w-[unset]" type="single" collapsible>
-        <AccordionItem className="max-w-full" value="item-1">
+      <Accordion className="w-full lg:w-[60rem] " type="single" collapsible>
+        <AccordionItem className="max-w-full lg:w-[60rem]" value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
           <AccordionContent>
             Yes. It adheres to the WAI-ARIA design pattern.

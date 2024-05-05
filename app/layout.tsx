@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat} from "next/font/google";
 import "./globals.css";
 import TopHeader from "@/components/shared/topHeader";
 import clsx from "clsx";
