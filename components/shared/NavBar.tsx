@@ -65,7 +65,7 @@ export default function NavBar() {
               Bundles
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid grid-cols-2 grid-rows-1 place-items-center p-3 md:w-[400px] lg:w-[500px] ">
+              <ul className="grid grid-rows-2 grid-cols-1 place-items-center p-3 md:w-[400px] lg:w-[500px] ">
                 <ListItem href="/docs" title="3-subject Bundle"></ListItem>
                 <ListItem
                   href="/docs/installation"
@@ -115,7 +115,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none rounded-base p-6 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "w-full block select-none rounded-base p-10 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className,
           )}
           {...props}

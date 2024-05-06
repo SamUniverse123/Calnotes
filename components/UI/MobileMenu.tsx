@@ -14,13 +14,13 @@ function MobileMenu({menuOpen,setMenuOpen}:props) {
       <ul className="space-y-1">
         <li>
           <details className="group [&_summary::-webkit-details-marker]:hidden">
-            <summary className="flex  cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+            <summary className="flex items-center justify-between px-4 py-2 text-gray-500 rounded-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700">
               <span className="text-sm font-medium"> Bundles </span>
 
-              <span className="shrink-0 transition duration-300 group-open:-rotate-180">
+              <span className="transition duration-300 shrink-0 group-open:-rotate-180">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -32,22 +32,22 @@ function MobileMenu({menuOpen,setMenuOpen}:props) {
                 </svg>
               </span>
             </summary>
-            <ul className="mt-2 space-y-1 px-4">
+            <ul className="px-4 mt-2 space-y-1">
               <li>
                 <a
                   href="#"
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                  className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
-                  Banned Users
+                  3 subject Bundle
                 </a>
               </li>
 
               <li>
                 <a
                   href="#"
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                  className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
-                  Calendar
+                  4 subject Bundle
                 </a>
               </li>
             </ul>
@@ -55,13 +55,13 @@ function MobileMenu({menuOpen,setMenuOpen}:props) {
         </li>
         <li>
           <details className="group [&_summary::-webkit-details-marker]:hidden">
-            <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+            <summary className="flex items-center justify-between px-4 py-2 text-gray-500 rounded-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700">
               <span className="text-sm font-medium"> Subjects </span>
 
-              <span className="shrink-0 transition duration-300 group-open:-rotate-180">
+              <span className="transition duration-300 shrink-0 group-open:-rotate-180">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -74,42 +74,69 @@ function MobileMenu({menuOpen,setMenuOpen}:props) {
               </span>
             </summary>
 
-            <ul className="mt-2 space-y-1 px-4">
+            <ul className="px-4 mt-2 space-y-1">
               <li>
                 <a
                   href="#"
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                  className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
-                  Details
+                  Physics
                 </a>
               </li>
 
               <li>
                 <a
                   href="#"
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                  className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
-                  Security
+                  Chemistry
                 </a>
               </li>
 
               <li>
-                <form action="#">
-                  <button
-                    type="submit"
-                    className="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700"
-                  >
-                    Logout
-                  </button>
-                </form>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
+                >
+                  Biology
+                </a>
               </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
+                >
+                  Maths
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
+                >
+                  Fur maths
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
+                >
+                  Economy
+                </a>
+              </li>
+
+
+
+
+              
             </ul>
           </details>
         </li>
         <li>
           <a
             href="#"
-            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+            className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
           >
             About Us
           </a>
@@ -118,7 +145,7 @@ function MobileMenu({menuOpen,setMenuOpen}:props) {
         <li>
           <a
             href="#"
-            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+            className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
           >
             Cart
           </a>

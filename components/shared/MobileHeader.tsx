@@ -14,23 +14,23 @@ function MobileHeader({menuOpen, setMenuOpen} : props) {
     
 
   return (
-    <header className="sm:hidden w-full bg-white text-sm py-4 dark:bg-neutral-800 border-b-4 border-black ">
+    <header className="w-full py-4 text-sm bg-white border-b-4 border-black sm:hidden dark:bg-neutral-800 ">
       <nav
         className="max-w-[85rem] w-full mx-1 sm:mx-auto px-4 flex items-center sm:justify-between"
         aria-label="Global"
       >
         <Link
-          className=" sm:pr-0 flex-none text-3xl font-semibold dark:text-white"
+          className="flex-none text-3xl font-semibold sm:pr-0 dark:text-white"
           href="/"
         >
           Calnotes
         </Link>
 
-        <div className="flex flex-row items-center gap-5  sm:mr-10 sm:justify-end sm:mt-0 sm:ps-5 ">
+        <div className="flex flex-row items-center gap-5 sm:mr-10 sm:justify-end sm:mt-0 sm:ps-5 ">
           {menuOpen ? (
             <>
               <X
-                className="sm:hidden absolute right-3 "
+                className="absolute sm:hidden right-3 "
                 onClick={() => {
                   setMenuOpen(false);
                 }}
@@ -39,7 +39,7 @@ function MobileHeader({menuOpen, setMenuOpen} : props) {
             </>
           ) : (
             <Menu
-              className="sm:hidden absolute right-3"
+              className="absolute sm:hidden right-3"
               onClick={() => {
                 setMenuOpen(true);
               }}

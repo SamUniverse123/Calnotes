@@ -13,7 +13,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex">
-        <div className=" background mx-auto max-w-2xl lg:max-w-7xl px-10 py-16 lg:px-20 w-full">
+        <div className=" bg-white mx-auto max-w-2xl lg:max-w-7xl px-10 py-16 lg:px-20 w-full">
           <h1 className="text-3xl  sm:text-5xl font-bold tracking-tight text-gray-900 mb-16">
             Cambridge AS and A Level Subjects
           </h1>
