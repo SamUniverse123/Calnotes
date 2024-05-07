@@ -77,7 +77,7 @@
 
 @layer components {
   .hero {
-    @apply w-full min-h-[36rem]  my-10 px-4 sm:px-6 lg:px-8 bg-white border-black border-2 rounded-base flex;
+    @apply w-full min-h-[36rem]  px-4 sm:px-6 lg:px-8 bg-white border-black border-2 flex;
   }
 
   .background {

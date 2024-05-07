@@ -10,7 +10,7 @@ function MobileMenu({menuOpen,setMenuOpen}:props) {
   return (
     <>
     {menuOpen && (
-    <div  className="bg-white" role="dialog" aria-modal="true">
+    <div  className="bg-white border-b-2 border-black" role="dialog" aria-modal="true">
       <ul className="space-y-1">
         <li>
           <details className="group [&_summary::-webkit-details-marker]:hidden">

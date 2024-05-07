@@ -22,7 +22,7 @@ function FAQ() {
         <AccordionItem className=" max-w-full lg:w-[60rem]" value="item-1">
           <AccordionTrigger>Where and how do I access my notes after purchasing them?</AccordionTrigger>
           <AccordionContent>
-            An email with the PDFs will be sent to your email account right after completing the purchase. After downloading the files on your device, you can view the notes on any PDF viewer of your choosing.
+            An email with the PDFs will be sent to your email account right after the purchase is complete. After downloading the files on your device, you can view the notes on any PDF viewer of your choosing.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

@@ -63,7 +63,13 @@ const config = {
       'BrutDB' : '#3300FF',
       'BrutLB' : '#7DF9FF',
       'BrutG' : '#2FFF2F',
-      'BrutP' :'#9723c9'  
+      'BrutP' :'#9723c9'  ,
+
+      //footer color
+      'footer' : '#141520',
+      'Fhover' : '#c8befd',
+
+
        },
       borderRadius: {
         lg: "var(--radius)",

@@ -2,18 +2,18 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-footer">
       <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
           <a
-            className="inline-block rounded-full p-2 text-white shadow transition  sm:p-3 lg:p-4"
+            className="inline-block rounded-full p-2 text-white font-semibold shadow transition  sm:p-3 lg:p-4"
             href="#MainContent"
           >
             <span className="sr-only">Back to top</span>
 
-            <svg
+            <svg 
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-5 w-5 hover:text-Fhover"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -30,7 +30,7 @@ function Footer() {
           <div>
             <div className="flex justify-center lg:justify-start"></div>
 
-            <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
+            <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-lg text-white lg:text-left font-semibold">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
               consequuntur amet culpa cum itaque neque.
             </p>
@@ -39,7 +39,7 @@ function Footer() {
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
             <li>
               <a
-                className="text-gray-700 transition hover:text-gray-700/75"
+                className="text-white  transition hover:text-Fhover"
                 href="#"
               >
                 {" "}
@@ -49,7 +49,7 @@ function Footer() {
 
             <li>
               <a
-                className="text-gray-700 transition hover:text-gray-700/75"
+                className="text-white  transition hover:text-Fhover"
                 href="#"
               >
                 {" "}
@@ -59,7 +59,7 @@ function Footer() {
 
             <li>
               <a
-                className="text-gray-700 transition hover:text-gray-700/75"
+                className="text-white  transition hover:text-Fhover"
                 href="#"
               >
                 {" "}
@@ -69,7 +69,7 @@ function Footer() {
 
             <li>
               <a
-                className="text-gray-700 transition hover:text-gray-700/75"
+                className="text-white transition hover:text-Fhover"
                 href="#"
               >
                 {" "}
@@ -79,7 +79,7 @@ function Footer() {
           </ul>
         </div>
 
-        <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
+        <p className="mt-12 text-center text-sm text-Fhover lg:text-right">
           Created by Hon Sam
         </p>
       </div>

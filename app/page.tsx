@@ -6,14 +6,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
+    <div className="p-4 sm:p-16">
       <section className="flex">
-        <div className="hero mx-5">
+        <div className="hero ">
           <div></div>
           <div></div>
         </div>
       </section>
       <section className="flex">
-        <div className=" bg-white mx-auto max-w-2xl lg:max-w-7xl px-10 py-16 lg:px-20 w-full">
+        <div className=" bg-white px-10 py-16 lg:px-20 lg:py-24 w-full border-x-2 border-black ">
           <h1 className="text-3xl  sm:text-5xl font-bold tracking-tight text-gray-900 mb-16">
             Cambridge AS and A Level Subjects
           </h1>
@@ -28,8 +29,9 @@ export default function Home() {
         </div>
       </section>
 
-      <div>
+      <div className=" bg-white px-10 py-16 lg:px-20 w-full border-x-2 border-y-2 border-black ">
         <FAQ />
+      </div>
       </div>
     </>
   );

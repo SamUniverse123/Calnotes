@@ -5,7 +5,7 @@ import TopHeader from "@/components/shared/topHeader";
 import clsx from "clsx";
 import Footer from "@/components/shared/Footer";
 
-const inter =  Montserrat({ subsets: ["latin"] });
+const inter =  Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Calnotes",
