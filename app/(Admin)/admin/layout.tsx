@@ -1,29 +1,32 @@
 import type { Metadata } from "next";
 import { Montserrat ,Bricolage_Grotesque} from "next/font/google";
-import "./globals.css";
-import TopHeader from "@/components/shared/topHeader";
+import "../../globals.css";
+
 import clsx from "clsx";
-import Footer from "@/components/shared/Footer";
+import AdminHeader from "@/components/shared/AdminHeader";
+
+
 
 const inter =  Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Calnotes",
-  description: "Concise and ",
+  title: "Calnotes Admin",
+  description: "Admin page ",
 };
 
 export default function RootLayout({
+  edit,
   children,
 }: Readonly<{
+  edit: React.ReactNode
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body className={clsx(inter.className)}>
-        <TopHeader />
+        <AdminHeader/>
+        {edit}
         {children}
-        <Footer />
       </body>
     </html>
-  );
-}
+  );}

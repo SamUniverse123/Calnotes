@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Link } from "lucide-react";
 import React from "react";
 
 interface props{
@@ -34,21 +35,21 @@ function MobileMenu({menuOpen,setMenuOpen}:props) {
             </summary>
             <ul className="px-4 mt-2 space-y-1">
               <li>
-                <a
+                <Link
                   href="#"
                   className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
                   3 subject Bundle
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="#"
                   className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
                   4 subject Bundle
-                </a>
+                </Link>
               </li>
             </ul>
           </details>
@@ -76,54 +77,54 @@ function MobileMenu({menuOpen,setMenuOpen}:props) {
 
             <ul className="px-4 mt-2 space-y-1">
               <li>
-                <a
+                <Link
                   href="#"
                   className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
                   Physics
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="#"
                   className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
                   Chemistry
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="#"
                   className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
                   Biology
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
                   Maths
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
                   Fur maths
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
                   Economy
-                </a>
+                </Link>
               </li>
 
 
@@ -134,21 +135,21 @@ function MobileMenu({menuOpen,setMenuOpen}:props) {
           </details>
         </li>
         <li>
-          <a
+          <Link
             href="#"
             className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
           >
             About Us
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a
+          <Link
             href="#"
             className="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
           >
             Cart
-          </a>
+          </Link>
         </li>
 
         
